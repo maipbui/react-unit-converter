@@ -4,7 +4,7 @@
     "name": "Currency",
     "path": "currency",
     "icon": "dollar-sign",
-    "url_api": "https://api.exchangerate.host/latest"
+    "url_api": "rates/currency_rates.json"
   },
   {
     "id": 2,
