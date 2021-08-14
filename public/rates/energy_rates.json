@@ -1,0 +1,20 @@
+{
+  "motd": {
+    "msg": "Created by Mai Bui",
+    "email": "buim /at/ cua /dot/ edu"
+  },
+  "success": true,
+  "base": "Joule",
+  "date": "2021-08-04",
+  "rates": {
+    "Kilojoule": 1.111111,
+    "Gram calorie": 17.4533,
+    "Kilocalorie": 60,
+    "Watt hour": 0.0174533,
+    "Kilowatt hour": 3600,
+    "Electronvolt": 1.111111,
+    "British thermal unit": 17.4533,
+    "US therm": 60,
+    "Foot-pound": 0.0174533
+  }
+}

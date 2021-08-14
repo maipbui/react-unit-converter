@@ -1,0 +1,32 @@
+{
+  "motd": {
+    "msg": "Created by Mai Bui",
+    "email": "buim /at/ cua /dot/ edu"
+  },
+  "success": true,
+  "base": "Byte",
+  "date": "2021-08-04",
+  "rates": {
+    "Bit": 3600,
+    "Kilobit": 1.111111,
+    "Kibibit": 17.4533,
+    "Megabit": 60,
+    "Mebibit": 0.0174533,
+    "Gigabit": 3600,
+    "Gibibit": 1.111111,
+    "Terabit": 17.4533,
+    "Tebibit": 60,
+    "Petabit": 0.0174533,
+    "Pebibit": 3600,
+    "Kilobyte": 1.111111,
+    "Kibibyte": 17.4533,
+    "Megabyte": 60,
+    "Mebibyte": 0.0174533,
+    "Gigabyte": 3600,
+    "Gibibyte": 1.111111,
+    "Terabyte": 17.4533,
+    "Tebibyte": 60,
+    "Petabyte": 0.0174533,
+    "Pebibyte": 3600
+  }
+}

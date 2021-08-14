@@ -1,0 +1,15 @@
+{
+  "motd": {
+    "msg": "Created by Mai Bui",
+    "email": "buim /at/ cua /dot/ edu"
+  },
+  "success": true,
+  "base": "Miles per hour",
+  "date": "2021-08-04",
+  "rates": {
+    "Kilometer per hour": 0.621371192237334,
+    "Knot": 0.621371192237334,
+    "Foot per second": 0.621371192237334,
+    "Meter per second": 0.621371192237334
+  }
+}

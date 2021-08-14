@@ -1,0 +1,16 @@
+{
+  "motd": {
+    "msg": "Created by Mai Bui",
+    "email": "buim /at/ cua /dot/ edu"
+  },
+  "success": true,
+  "base": "Degree",
+  "date": "2021-08-04",
+  "rates": {
+    "Gradian": 1.111111,
+    "Milliradian": 17.4533,
+    "Minute of arc": 60,
+    "Radian": 0.0174533,
+    "Second of arc": 3600
+  }
+}

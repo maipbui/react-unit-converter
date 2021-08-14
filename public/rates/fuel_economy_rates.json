@@ -1,0 +1,14 @@
+{
+  "motd": {
+    "msg": "Created by Mai Bui",
+    "email": "buim /at/ cua /dot/ edu"
+  },
+  "success": true,
+  "base": "Kilometer per liter",
+  "date": "2021-08-04",
+  "rates": {
+    "Miles per gallon": 1.111111,
+    "Miles per gallon (Imperial)": 17.4533,
+    "Liter per 100 kilometers": 60
+  }
+}

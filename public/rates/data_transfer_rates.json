@@ -1,0 +1,23 @@
+{
+  "motd": {
+    "msg": "Created by Mai Bui",
+    "email": "buim /at/ cua /dot/ edu"
+  },
+  "success": true,
+  "base": "Bit per second",
+  "date": "2021-08-04",
+  "rates": {
+    "Kilobit per second": 1.111111,
+    "Kilobyte per second": 1.111111,
+    "Kibibit per second": 17.4533,
+    "Megabit per second": 60,
+    "Megabyte per second": 0.0174533,
+    "Mebibit per second": 3600,
+    "Gigabit per second": 1.111111,
+    "Gigabyte per second": 17.4533,
+    "Gibibit per second": 60,
+    "Terabit per second": 0.0174533,
+    "Terabyte per second": 3600,
+    "Tebibit per second": 1.111111
+  }
+}

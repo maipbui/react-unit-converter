@@ -1,0 +1,20 @@
+{
+  "motd": {
+    "msg": "Created by Mai Bui",
+    "email": "buim /at/ cua /dot/ edu"
+  },
+  "success": true,
+  "base": "Pound",
+  "date": "2021-08-04",
+  "rates": {
+    "Metric ton": 0.000453592,
+    "Kilogram": 0.4535920000000000507,
+    "Gram": 453.59200000000004138,
+    "Milligram": 453592.00000000005821,
+    "Microgram": 453592000,
+    "Imperial ton": 0.0004464282072723215,
+    "US ton": 0.00049999959214500002032,
+    "Stone": 0.071428513163571433209,
+    "Ounce": 16
+  }
+}
