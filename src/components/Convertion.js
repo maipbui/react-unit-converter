@@ -19,7 +19,7 @@ export default function Convertion(props) {
   let toAmount, fromAmount;
   if (amountInFromUnit) {
     fromAmount = amount;
-    toAmount = amount * exchangeRate;
+    toAmount = amount * exchangeRate || 0;
   } else {
     toAmount = amount;
     fromAmount = amount / exchangeRate;
