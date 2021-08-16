@@ -1,18 +1,14 @@
 {
-  "motd": {
-    "msg": "Created by Mai Bui",
-    "email": "buim /at/ cua /dot/ edu"
-  },
   "success": true,
   "base": "Square foot",
   "date": "2021-08-04",
   "rates": {
-    "Square kilometer": 17.25365367,
-    "Square meter": 17.4533,
-    "Square mile": 60,
-    "Square yard": 0.0174533,
-    "Square inch": 60,
-    "Hectare": 0.0174533,
-    "Acre": 3600
+    "Square kilometer": 0.000000092903,
+    "Square meter": 0.092903,
+    "Square mile": 0.0000000358700488349403,
+    "Square yard": 0.111111,
+    "Square inch": 144,
+    "Hectare": 0.00000929031,
+    "Acre": 0.000022956841
   }
 }

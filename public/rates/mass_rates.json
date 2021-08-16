@@ -1,8 +1,4 @@
 {
-  "motd": {
-    "msg": "Created by Mai Bui",
-    "email": "buim /at/ cua /dot/ edu"
-  },
   "success": true,
   "base": "Pound",
   "date": "2021-08-04",
@@ -13,8 +9,8 @@
     "Milligram": 453592.00000000005821,
     "Microgram": 453592000,
     "Imperial ton": 0.0004464282072723215,
-    "US ton": 0.00049999959214500002032,
-    "Stone": 0.071428513163571433209,
+    "US ton": 0.0005,
+    "Stone": 0.0714285,
     "Ounce": 16
   }
 }

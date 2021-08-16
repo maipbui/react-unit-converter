@@ -4,104 +4,104 @@
     "name": "Currency",
     "path": "currency",
     "icon": "dollar-sign",
-    "url_api": "rates/currency_rates.json"
+    "json_path": "rates/currency_rates.json"
   },
   {
     "id": 2,
     "name": "Angle",
     "path": "angle",
-    "icon": "thermometer-half",
-    "url_api": "rates/angle_rates.json"
+    "icon": "caret-square-up",
+    "json_path": "rates/angle_rates.json"
   },
   {
     "id": 3,
     "name": "Area",
     "path": "area",
     "icon": "map",
-    "url_api": "rates/area_rates.json"
+    "json_path": "rates/area_rates.json"
   },
   {
     "id": 4,
     "name": "Data Transfer",
     "path": "datatransfer",
-    "icon": "map",
-    "url_api": "rates/data_transfer_rates.json"
+    "icon": "database",
+    "json_path": "rates/data_transfer_rates.json"
   },
   {
     "id": 5,
     "name": "Digital Storage",
     "path": "digitalstorage",
-    "icon": "map",
-    "url_api": "rates/digital_storage_rates.json"
+    "icon": "hdd",
+    "json_path": "rates/digital_storage_rates.json"
   },
   {
     "id": 6,
     "name": "energy",
     "path": "energy",
-    "icon": "map",
-    "url_api": "rates/energy_rates.json"
+    "icon": "lightbulb",
+    "json_path": "rates/energy_rates.json"
   },
   {
     "id": 7,
-    "name": "frequency",
-    "path": "frequence",
-    "icon": "map",
-    "url_api": "rates/frequency_rates.json"
+    "name": "Frequency",
+    "path": "frequency",
+    "icon": "wave-square",
+    "json_path": "rates/frequency_rates.json"
   },
   {
     "id": 8,
     "name": "Fuel Economy",
     "path": "fueleconomy",
-    "icon": "map",
-    "url_api": "rates/fuel_economy_rates.json"
+    "icon": "gas-pump",
+    "json_path": "rates/fuel_economy_rates.json"
   },
   {
     "id": 9,
     "name": "Length",
     "path": "length",
     "icon": "ruler-horizontal",
-    "url_api": "rates/length_rates.json"
+    "json_path": "rates/length_rates.json"
   },
   {
     "id": 10,
     "name": "Mass",
     "path": "mass",
-    "icon": "ruler-horizontal",
-    "url_api": "rates/mass_rates.json"
+    "icon": "balance-scale",
+    "json_path": "rates/mass_rates.json"
   },
   {
     "id": 11,
     "name": "Pressure",
     "path": "pressure",
-    "icon": "ruler-horizontal",
-    "url_api": "rates/pressure_rates.json"
+    "icon": "compress-alt",
+    "json_path": "rates/pressure_rates.json"
   },
   {
     "id": 12,
     "name": "Speed",
     "path": "speed",
     "icon": "tachometer-alt",
-    "url_api": "rates/speed_rates.json"
+    "json_path": "rates/speed_rates.json"
   },
   {
     "id": 13,
     "name": "Temperature",
     "path": "temperature",
     "icon": "thermometer-half",
-    "url_api": "rates/temperature_rates.json"
+    "json_path": "rates/temperature_rates.json"
   },
   {
     "id": 14,
     "name": "Time",
     "path": "time",
     "icon": "clock",
-    "url_api": "rates/time_rates.json"
+    "json_path": "rates/time_rates.json"
   },
   {
     "id": 15,
     "name": "Volume",
     "path": "volume",
     "icon": "thermometer-half",
-    "url_api": "rates/volume_rates.json"
+    "json_path": "rates/volume_rates.json"
   }
 ]

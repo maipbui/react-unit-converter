@@ -1,45 +1,28 @@
 import React from "react";
-import "./App.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Category from "./components/Category";
 import Convertion from "./components/Convertion";
 import { Container, Row } from "react-grid-system";
 import { Switch, Route } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  fas,
-  faUnderline,
-  faRulerHorizontal,
-  faDollarSign,
-  faTachometerAlt,
-  faClock,
-  faMap,
-  faThermometerHalf,
-} from "@fortawesome/free-solid-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import unitConfig from "./config.json";
+import Navigation from "./components/Navigation";
 
-library.add(
-  fas,
-  faRulerHorizontal,
-  faDollarSign,
-  faTachometerAlt,
-  faClock,
-  faMap,
-  faThermometerHalf
-);
+library.add(fas);
 
 function App() {
   return (
     <Container>
       <Switch>
         <Route exact path="/">
-          <FontAwesomeIcon icon={faUnderline} />
-          <h1>Unit Converter</h1>
-        </Route>
-      </Switch>
-      <Switch>
-        <Route exact path="/">
-          <Row>
+          <Navigation />
+          <Row
+            style={{
+              marginTop: "70px",
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr 1fr",
+            }}
+          >
             {unitConfig.map((unit) => (
               <Category
                 key={unit.id}
@@ -50,19 +33,16 @@ function App() {
             ))}
           </Row>
         </Route>
-      </Switch>
-      <Switch>
         {unitConfig.map((unit) => (
           <Route
             key={unit.id}
             path={"/" + unit.path}
-            render={(props) => {
+            render={() => {
               return (
                 <Convertion
-                  {...props}
                   key={unit.id}
                   unitName={unit.name}
-                  unitAPI={unit.url_api}
+                  json_file={unit.json_path}
                 />
               );
             }}

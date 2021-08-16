@@ -1,22 +1,18 @@
 {
-  "motd": {
-    "msg": "Created by Mai Bui",
-    "email": "buim /at/ cua /dot/ edu"
-  },
   "success": true,
   "base": "Second",
   "date": "2021-08-04",
   "rates": {
-    "Minute": 60,
-    "Nanosecond": 3600,
-    "Millisecond": 3600000,
-    "Microsecond": 3600000,
-    "Hour": 0.4166666666666666,
-    "Day": 0.04166666666666666,
-    "Week": 0.04166666666666666,
-    "Month": 0.04166666666666666,
-    "Year": 0.00011415525114155251,
-    "Decade": 0.04166666666666666,
-    "Century": 0.04166666666666666
+    "Minute": 0.0166667,
+    "Nanosecond": 1000000000,
+    "Millisecond": 1000,
+    "Microsecond": 1000000,
+    "Hour": 0.000277778,
+    "Day": 0.000011574,
+    "Week": 0.0000016534,
+    "Month": 0.00000038052,
+    "Year": 0.00000003171,
+    "Decade": 0.000000003171,
+    "Century": 0.0000000003171
   }
 }

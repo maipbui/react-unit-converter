@@ -1,15 +1,11 @@
 {
-  "motd": {
-    "msg": "Created by Mai Bui",
-    "email": "buim /at/ cua /dot/ edu"
-  },
   "success": true,
   "base": "Pascal",
   "date": "2021-08-04",
   "rates": {
-    "Bar": 1.111111,
-    "Pound-force per square inch": 17.4533,
-    "Standard atmosphere": 60,
-    "Torr": 0.0174533
+    "Bar": 0.00001,
+    "Pound-force per square inch": 0.000145038,
+    "Standard atmosphere": 0.0000098692,
+    "Torr": 0.00750062
   }
 }

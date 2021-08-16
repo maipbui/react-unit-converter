@@ -1,20 +1,16 @@
 {
-  "motd": {
-    "msg": "Created by Mai Bui",
-    "email": "buim /at/ cua /dot/ edu"
-  },
   "success": true,
   "base": "Joule",
   "date": "2021-08-04",
   "rates": {
-    "Kilojoule": 1.111111,
-    "Gram calorie": 17.4533,
-    "Kilocalorie": 60,
-    "Watt hour": 0.0174533,
-    "Kilowatt hour": 3600,
-    "Electronvolt": 1.111111,
-    "British thermal unit": 17.4533,
-    "US therm": 60,
-    "Foot-pound": 0.0174533
+    "Kilojoule": 0.001000001104,
+    "Gram calorie": 0.23900599999999996847,
+    "Kilocalorie": 0.00023900599999999996782,
+    "Watt hour": 0.00027777808444444439338,
+    "Kilowatt hour": 2.77778084444444409e-7,
+    "Electronvolt": 6241516233886493696,
+    "British thermal unit": 0.000947817,
+    "US therm": 0.0000000094804,
+    "Foot-pound": 0.737562
   }
 }

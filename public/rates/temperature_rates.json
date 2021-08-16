@@ -1,13 +1,9 @@
 {
-  "motd": {
-    "msg": "Created by Mai Bui",
-    "email": "buim /at/ cua /dot/ edu"
-  },
   "success": true,
   "base": "Calcius",
   "date": "2021-08-04",
   "rates": {
-    "Kelvin": 274.15,
-    "Fahrenheit": 33.7999999
+    "Kelvin": 305.15,
+    "Fahrenheit": 89.6
   }
 }

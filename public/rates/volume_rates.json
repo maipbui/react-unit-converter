@@ -1,29 +1,25 @@
 {
-  "motd": {
-    "msg": "Created by Mai Bui",
-    "email": "buim /at/ cua /dot/ edu"
-  },
   "success": true,
   "base": "US liquid gallon",
   "date": "2021-08-04",
   "rates": {
-    "US liquid quart": 1.111111,
-    "US liquid pint": 17.4533,
-    "US legal cup": 60,
-    "US fluid ounce": 0.0174533,
-    "US tablespoon": 3600,
-    "US teaspoon": 1.111111,
-    "Cubic meter": 17.4533,
-    "Liter": 60,
-    "Millimeter": 0.0174533,
-    "Imperial gallon": 3600,
-    "Imperial quart": 1.111111,
-    "Imperial pint": 17.4533,
-    "Imperial cup": 60,
-    "Imperial fluid ounce": 0.0174533,
-    "Imperial table spoon": 3600,
-    "Imperial teaspoon": 1.111111,
-    "Cubic foot": 17.4533,
-    "Cubic inch": 60
+    "US liquid quart": 4,
+    "US liquid pint": 8,
+    "US legal cup": 15.7725,
+    "US fluid ounce": 128,
+    "US tablespoon": 256,
+    "US teaspoon": 768,
+    "Cubic meter": 0.00378541,
+    "Liter": 3.78541,
+    "Millimeter": 3785.41,
+    "Imperial gallon": 0.832674,
+    "Imperial quart": 3.3307,
+    "Imperial pint": 6.66139,
+    "Imperial cup": 13.3228,
+    "Imperial fluid ounce": 133.228,
+    "Imperial table spoon": 213.165,
+    "Imperial teaspoon": 639.494,
+    "Cubic foot": 0.133681,
+    "Cubic inch": 231
   }
 }

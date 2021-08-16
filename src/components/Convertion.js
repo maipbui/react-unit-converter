@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import ConvertionRow from "./ConvertionRow";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowsAltH } from "@fortawesome/free-solid-svg-icons";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navigation from "./Navigation";
+import { Row, Col } from "react-grid-system";
 
 export default function Convertion(props) {
-  const { unitName, unitAPI } = props;
+  const { json_file } = props;
 
   const [unitOptions, setUnitOptions] = useState([]);
   const [fromUnit, setFromUnit] = useState();
@@ -23,7 +26,7 @@ export default function Convertion(props) {
   }
 
   useEffect(() => {
-    fetch(unitAPI)
+    fetch(json_file)
       .then((res) => res.json())
       .then((data) => {
         const firstUnit = Object.keys(data.rates)[0];
@@ -35,10 +38,14 @@ export default function Convertion(props) {
   }, []);
 
   useEffect(() => {
-    if (fromUnit != null && toUnit != null) {
-      fetch(`${unitAPI}?base=${fromUnit}&symbols=${toUnit}`)
+    if (fromUnit != null && toUnit != null && fromUnit !== toUnit) {
+      fetch(`${json_file}?base=${fromUnit}&symbols=${toUnit}`)
         .then((res) => res.json())
         .then((data) => setExchangeRate(data.rates[toUnit]));
+    } else if (fromUnit != null && toUnit != null && fromUnit === toUnit) {
+      fetch(`${json_file}?base=${fromUnit}&symbols=${toUnit}`)
+        .then((res) => res.json())
+        .then((data) => setExchangeRate(1));
     }
   }, [fromUnit, toUnit]);
 
@@ -54,22 +61,40 @@ export default function Convertion(props) {
 
   return (
     <div>
-      <h2>Convert {unitName}</h2>
-      <ConvertionRow
-        unitOptions={unitOptions}
-        selectedUnit={fromUnit}
-        onChangeUnit={(e) => setFromUnit(e.target.value)}
-        onChangeAmount={handleFromAmountChange}
-        amount={fromAmount}
-      />
-      <FontAwesomeIcon icon={faArrowsAltH} />
-      <ConvertionRow
-        unitOptions={unitOptions}
-        selectedUnit={toUnit}
-        onChangeUnit={(e) => setToUnit(e.target.value)}
-        onChangeAmount={handleToAmountChange}
-        amount={toAmount}
-      />
+      <Navigation />
+      <Row
+        style={{
+          marginTop: "70px",
+        }}
+      >
+        <Col>
+          <ConvertionRow
+            unitOptions={unitOptions}
+            selectedUnit={fromUnit}
+            onChangeUnit={(e) => setFromUnit(e.target.value)}
+            onChangeAmount={handleFromAmountChange}
+            amount={fromAmount}
+          />
+        </Col>
+        <Col
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <FontAwesomeIcon icon={faArrowsAltH} style={{ fontSize: "4em" }} />
+        </Col>
+        <Col>
+          <ConvertionRow
+            unitOptions={unitOptions}
+            selectedUnit={toUnit}
+            onChangeUnit={(e) => setToUnit(e.target.value)}
+            onChangeAmount={handleToAmountChange}
+            amount={toAmount}
+          />
+        </Col>
+      </Row>
     </div>
   );
 }

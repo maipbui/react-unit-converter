@@ -25,6 +25,7 @@ export default function Category(props) {
             className="stretched-link"
             variant="primary"
             onClick={handleClick}
+            style={{ minWidth: "35%" }}
           >
             {unitName}
           </Button>

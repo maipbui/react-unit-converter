@@ -1,23 +1,19 @@
 {
-  "motd": {
-    "msg": "Created by Mai Bui",
-    "email": "buim /at/ cua /dot/ edu"
-  },
   "success": true,
   "base": "Bit per second",
   "date": "2021-08-04",
   "rates": {
-    "Kilobit per second": 1.111111,
-    "Kilobyte per second": 1.111111,
-    "Kibibit per second": 17.4533,
-    "Megabit per second": 60,
-    "Megabyte per second": 0.0174533,
-    "Mebibit per second": 3600,
-    "Gigabit per second": 1.111111,
-    "Gigabyte per second": 17.4533,
-    "Gibibit per second": 60,
-    "Terabit per second": 0.0174533,
-    "Terabyte per second": 3600,
-    "Tebibit per second": 1.111111
+    "Kilobit per second": 0.001,
+    "Kilobyte per second": 0.000125,
+    "Kibibit per second": 0.000976563,
+    "Megabit per second": 0.000001,
+    "Megabyte per second": 0.000000125,
+    "Mebibit per second": 0.00000095367,
+    "Gigabit per second": 0.000000001,
+    "Gigabyte per second": 0.000000000125,
+    "Gibibit per second": 0.00000000093132,
+    "Terabit per second": 0.000000000001,
+    "Terabyte per second": 0.000000000000125,
+    "Tebibit per second": 0.00000000000090949
   }
 }

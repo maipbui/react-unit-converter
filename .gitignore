@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # Ignore IDE specific files
-.vscode/
-.vscode/settings.json
+/.vscode
+/.vscode/settings.json

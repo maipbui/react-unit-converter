@@ -1,8 +1,4 @@
 {
-  "motd": {
-    "msg": "Created by Mai Bui",
-    "email": "buim /at/ cua /dot/ edu"
-  },
   "success": true,
   "base": "Foot",
   "date": "2021-08-04",
@@ -10,9 +6,9 @@
     "Inch": 12,
     "Yard": 0.33333333,
     "Mile": 0.00018939393,
-    "Nautical mile": 0.3523,
-    "Nanometer": 304.8000004657344,
-    "Micrometer": 30.48000004657344,
+    "Nautical mile": 0.000164579,
+    "Nanometer": 304800000,
+    "Micrometer": 304800,
     "Milimeter": 304.8000004657344,
     "Centimeter": 30.48000004657344,
     "Meter": 0.30480000046573436,
