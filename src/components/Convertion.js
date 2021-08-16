@@ -12,17 +12,18 @@ export default function Convertion(props) {
   const [unitOptions, setUnitOptions] = useState([]);
   const [fromUnit, setFromUnit] = useState();
   const [toUnit, setToUnit] = useState();
-  const [exchangeRate, setExchangeRate] = useState();
+  const [exchangeRateFrom, setExchangeRateFrom] = useState();
+  const [exchangeRateTo, setExchangeRateTo] = useState();
   const [amount, setAmount] = useState(1);
   const [amountInFromUnit, setAmountInFromUnit] = useState(true);
 
   let toAmount, fromAmount;
   if (amountInFromUnit) {
     fromAmount = amount;
-    toAmount = amount * exchangeRate || 0;
+    toAmount = (amount * exchangeRateTo) / exchangeRateFrom || 0;
   } else {
     toAmount = amount;
-    fromAmount = amount / exchangeRate;
+    fromAmount = (amount * exchangeRateFrom) / exchangeRateTo;
   }
 
   useEffect(() => {
@@ -33,19 +34,38 @@ export default function Convertion(props) {
         setUnitOptions([data.base, ...Object.keys(data.rates)]);
         setFromUnit(data.base);
         setToUnit(firstUnit);
-        setExchangeRate(data.rates[firstUnit]);
+        setExchangeRateFrom(1);
+        setExchangeRateTo(data.rates[firstUnit]);
       });
   }, []);
 
   useEffect(() => {
-    if (fromUnit != null && toUnit != null && fromUnit !== toUnit) {
-      fetch(`${json_file}?base=${fromUnit}&symbols=${toUnit}`)
-        .then((res) => res.json())
-        .then((data) => setExchangeRate(data.rates[toUnit]));
-    } else if (fromUnit != null && toUnit != null && fromUnit === toUnit) {
-      fetch(`${json_file}?base=${fromUnit}&symbols=${toUnit}`)
-        .then((res) => res.json())
-        .then((data) => setExchangeRate(1));
+    if (fromUnit === toUnit && fromUnit != null) {
+      setExchangeRateFrom(1);
+      setExchangeRateTo(1);
+    } else if (fromUnit != null && toUnit != null) {
+      if (fromUnit === "EUR") {
+        fetch(`${json_file}?base=${fromUnit}&symbols=${toUnit}`)
+          .then((res) => res.json())
+          .then((data) => {
+            setExchangeRateFrom(1);
+            setExchangeRateTo(data.rates[toUnit]);
+          });
+      } else if (toUnit === "EUR") {
+        fetch(`${json_file}?base=${fromUnit}&symbols=${toUnit}`)
+          .then((res) => res.json())
+          .then((data) => {
+            setExchangeRateTo(1);
+            setExchangeRateFrom(data.rates[fromUnit]);
+          });
+      } else {
+        fetch(`${json_file}?base=${fromUnit}&symbols=${toUnit}`)
+          .then((res) => res.json())
+          .then((data) => {
+            setExchangeRateFrom(data.rates[fromUnit]);
+            setExchangeRateTo(data.rates[toUnit]);
+          });
+      }
     }
   }, [fromUnit, toUnit]);
 
