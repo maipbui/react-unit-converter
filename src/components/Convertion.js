@@ -5,6 +5,7 @@ import { faArrowsAltH } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "./Navigation";
 import { Row, Col } from "react-grid-system";
+import Footer from "./Footer";
 
 export default function Convertion(props) {
   const { json_file } = props;
@@ -119,6 +120,7 @@ export default function Convertion(props) {
           />
         </Col>
       </Row>
+      <Footer/>
     </div>
   );
 }

@@ -7,6 +7,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import unitConfig from "./config.json";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 library.add(fas);
 
@@ -32,6 +33,7 @@ function App() {
               ></Category>
             ))}
           </Row>
+          <Footer />
         </Route>
         {unitConfig.map((unit) => (
           <Route
