@@ -1,4 +1,5 @@
-# React Unit Converter
+<h1><img src="https://github.com/maipbui/react-unit-converter/blob/main/public/favicon.ico" width="30" height="30"/> React Unit Converter</h1>
+
 > Responsive unit converter that converts 15 different types of common measurement units.
 
 ### Built with
@@ -21,6 +22,13 @@ npm install
 ```shell
 npm start
 ```
+
+### Demo
+#### Homepage
+<img src="https://github.com/maipbui/react-unit-converter/blob/main/demo1.png"/>
+
+#### Convert page
+<img src="https://github.com/maipbui/react-unit-converter/blob/main/demo2.png"/>
 
 ### Contributors
 - [Mai Bui](https://github.com/maipbui)
