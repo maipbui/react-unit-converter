@@ -30,9 +30,5 @@ npm start
 #### Convert page
 <img src="https://github.com/maipbui/react-unit-converter/blob/main/demo2.png"/>
 
-### Contributors
-- [Mai Bui](https://github.com/maipbui)
-- [Loc Tran](https://github.com/loctran15)
-
 ## License
 The source code for the site is licensed under the MIT license. See `LICENSE` for more information.
